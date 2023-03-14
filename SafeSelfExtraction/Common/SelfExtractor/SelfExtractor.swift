@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol SelfExtractable: NSObject { }
+protocol SelfExtractable: AnyObject { }
 
 extension SelfExtractable {
     typealias VoidCall = (Self) -> Void
