@@ -6,7 +6,7 @@
 //  Copyright (c) 2023 Yaroslav Abaturov. All rights reserved.
 //
 
-protocol InitialSceneInteractorServiceType{
+protocol InitialSceneInteractorServiceType: AnyObject {
     func performCall(completion: @escaping (Bool) -> ())
 }
 
