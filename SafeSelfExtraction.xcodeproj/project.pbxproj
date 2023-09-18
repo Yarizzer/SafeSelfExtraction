@@ -211,8 +211,8 @@
 		7115FDDE29BC922400E2DFE0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				7115FDC629BC920C00E2DFE0 /* InitialSceneRouterContract.swift */,
 				7115FDC729BC920C00E2DFE0 /* InitialSceneRouter.swift */,
+				7115FDC629BC920C00E2DFE0 /* InitialSceneRouterContract.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
