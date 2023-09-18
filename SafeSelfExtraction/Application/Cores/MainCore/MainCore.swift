@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MainCoreType {
+protocol MainCoreType: AnyObject {
     func call(completion: @escaping () -> ())
 }
 
@@ -17,8 +17,14 @@ class MainCore {
     private init() { }
     
     func call(completion: @escaping (Bool) -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + Constants.secondsToAdd) {
             completion(true)
         }
+    }
+}
+
+extension MainCore {
+    private struct Constants {
+        static let secondsToAdd: TimeInterval = 10
     }
 }
